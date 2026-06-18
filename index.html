@@ -4,13 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List (Vanilla)</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="main.css" />
   </head>
 
   <body>
     <div class="app">
-      <!-- Header -->
       <header class="app-header">
         <div class="brand">
           <div class="logo" aria-hidden="true">✓</div>
@@ -34,9 +33,7 @@
         </div>
       </header>
 
-      <!-- Main -->
       <main class="card">
-        <!-- Top controls -->
         <section class="controls">
           <div class="search">
             <span class="icon" aria-hidden="true">⌕</span>
@@ -70,7 +67,6 @@
           </div>
         </section>
 
-        <!-- Create form (siz JS bilan submit qilasiz) -->
         <section class="create">
           <form class="create-form" data-form="create">
             <div class="field">
@@ -133,10 +129,8 @@
           </div>
         </section>
 
-        <!-- List -->
         <section class="list-wrap">
           <ul class="todo-list" data-list="todos">
-            <!-- EXAMPLE TODO #1 (active) -->
             <li class="todo-item" data-id="1" data-completed="false">
               <button
                 class="check"
@@ -189,7 +183,6 @@
               </div>
             </li>
 
-            <!-- EXAMPLE TODO #2 (completed) -->
             <li class="todo-item is-done" data-id="2" data-completed="true">
               <button
                 class="check is-checked"
@@ -246,7 +239,6 @@
             </li>
           </ul>
 
-          <!-- Empty state (JS bilan ko‘rsatib/yashirasiz) -->
           <div class="empty" hidden data-state="empty">
             <div class="empty-emoji" aria-hidden="true">📭</div>
             <h3>Hali todo yo‘q</h3>
@@ -254,7 +246,6 @@
           </div>
         </section>
 
-        <!-- Pagination (API pagination uchun) -->
         <footer class="pager">
           <button
             class="btn btn-ghost"
@@ -290,6 +281,8 @@
         >
       </footer>
     </div>
-    <script src="./app.js"></script>
+   <script type="module" src="./jsc/app.js"></script>
+    <script type="module" src="./jsc/api.js"></script>
+    <script type="module" src="./jsc/ui.js"></script>
   </body>
 </html>
