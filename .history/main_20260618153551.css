@@ -54,12 +54,7 @@ body {
     ),
     var(--bg);
 }
-body {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Ekran skrol qilinganda ham fon joyida turishi uchun */
-  min-height: 100vh;
-}
+
 
 code {
   font-family:

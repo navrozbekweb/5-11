@@ -55,6 +55,7 @@ body {
     var(--bg);
 }
 body {
+  background-image: linear-gradient(to right, #your-color-1, #your-color-2); /* Sizning gradientingiz */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Ekran skrol qilinganda ham fon joyida turishi uchun */
